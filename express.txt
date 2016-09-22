@@ -1,0 +1,55 @@
+
+MERN (Mongo)
+
+Customer (Client)
+Shop (Server)
+	Open (Address to the Door - Port)
+	Address - Location (URL endpoint) -DNS- IPAddress - localhost- 127.0.0.1:8080
+	Rack - Left / Right = 127.0.0.1:8080/movies or /users
+	Material - Get, Post, put, delete (logic goes inside these endpoints)
+	Get it from or put in the godown - Database (filesystem, DB (Mongo, sql, oracle))
+	- Environment
+	- App Environment
+
+for dev-dependencies - npm install <name of the module> --save -dev
+
+Web Application Framework
+	- COnfiguration
+	- Selective listening
+	- Whenever you Get this use this and respond with this
+		- routes
+		- For the modularization objective
+		- Need to import them in the main config file or the sequence of require
+		- Anything which is imported shalll be exported
+	- Will get request for which a response is expected
+	- Send the data to the client
+
+API - EndPoint - HTTP methods - Get, POsT, PUT, DELETE
+	- Movie
+	- Users
+POSTMAN 
+Assuming - My application will be serving JSONs, these JSON will utilized by Client APP to render data
+POST/PUT - bodyparser module will come into play
+
+
+
+
+Mongoose - databse driver
+Mongo - Databe - BSON - Binary JSON
+encoding of data - Binary, UTF-8
+
+npm init
+sudo npm install express-generator -g
+
+express
+npm install
+sudo npm install nodemon -g
+nodemon
+
+
+npm install hai supertest --save-dev
+sudo npm install mocha -g
+
+1)any fuction that can be passed as an argument to another function is called callback
+function
+2)the enclosing function can invoke the callback at a leter tym
