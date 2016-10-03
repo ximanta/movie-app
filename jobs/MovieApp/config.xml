@@ -45,7 +45,7 @@ MOCHA_FILE=./server/test-results.xml ./server/node_modules/.bin/mocha test --rep
   </builders>
   <publishers>
     <hudson.tasks.junit.JUnitResultArchiver plugin="junit@1.18">
-      <testResults>./server/test-results.xml</testResults>
+      <testResults>server/test-results.xml</testResults>
       <keepLongStdio>false</keepLongStdio>
       <healthScaleFactor>1.0</healthScaleFactor>
       <allowEmptyResults>false</allowEmptyResults>
