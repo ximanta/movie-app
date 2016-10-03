@@ -48,7 +48,7 @@
           <string></string>
           <string></string>
           <string>NODE_PATH</string>
-          <string>%APPDATA%\Roaming\npm\node_modules</string>
+          <string>%APPDATA%/Roaming/npm/node_modules</string>
         </tree-map>
       </envVars>
     </hudson.slaves.EnvironmentVariablesNodeProperty>
