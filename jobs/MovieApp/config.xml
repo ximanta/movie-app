@@ -38,7 +38,9 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>gulp
+      <command>cd client
+gulp
+cd ..
 MOCHA_FILE=./server/test-results.xml server/node_modules/.bin/mocha server/test --reporter mocha-junit-reporter</command>
     </hudson.tasks.Shell>
   </builders>
