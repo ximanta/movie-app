@@ -38,9 +38,10 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>./client/npm install
-./server/npm install
-MOCHA_FILE=./server/test-results.xml ./server/node_modules/.bin/mocha test --reporter mocha-junit-reporter</command>
+      <command>client/npm install
+server/npm install
+MOCHA_FILE=server/test-results.xml 
+server/node_modules/.bin/mocha test --reporter mocha-junit-reporter</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
