@@ -40,7 +40,7 @@ MOCHA_FILE=./server/test-results.xml server/node_modules/.bin/mocha server/test 
     <hudson.plugins.git.GitPublisher plugin="git@3.0.0">
       <configVersion>2</configVersion>
       <pushMerge>false</pushMerge>
-      <pushOnlyIfSuccess>true</pushOnlyIfSuccess>
+      <pushOnlyIfSuccess>false</pushOnlyIfSuccess>
       <forcePush>false</forcePush>
     </hudson.plugins.git.GitPublisher>
   </publishers>
