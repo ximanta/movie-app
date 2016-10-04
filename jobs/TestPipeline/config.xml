@@ -1,6 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <flow-definition plugin="workflow-job@2.7">
+  <description></description>
+  <displayName>Pipeline Demo</displayName>
   <keepDependencies>false</keepDependencies>
-  <properties/>
+  <properties>
+    <org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+      <triggers>
+        <hudson.triggers.SCMTrigger>
+          <spec></spec>
+          <ignorePostCommitHooks>false</ignorePostCommitHooks>
+        </hudson.triggers.SCMTrigger>
+      </triggers>
+    </org.jenkinsci.plugins.workflow.job.properties.PipelineTriggersJobProperty>
+  </properties>
   <triggers/>
+  <authToken>pipelinetoken</authToken>
 </flow-definition>
