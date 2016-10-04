@@ -39,7 +39,8 @@
   <builders>
     <hudson.tasks.Shell>
       <command>cd client
-gulp
+node node_modules/gulp/bin/gulp.js browserify
+node node_modules/gulp/bin/gulp.js copy
 cd ..
 MOCHA_FILE=./server/test-results.xml server/node_modules/.bin/mocha server/test --reporter mocha-junit-reporter</command>
     </hudson.tasks.Shell>
