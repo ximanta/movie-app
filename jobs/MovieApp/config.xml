@@ -43,6 +43,8 @@ npm install
 node node_modules/gulp/bin/gulp.js browserify
 node node_modules/gulp/bin/gulp.js copy
 cd ..
+cd server
+cd ..
 MOCHA_FILE=./server/test-results.xml server/node_modules/.bin/mocha server/test --reporter mocha-junit-reporter</command>
     </hudson.tasks.Shell>
   </builders>
